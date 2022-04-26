@@ -1,4 +1,147 @@
 <mxfile host="65bd71144e">
+    <diagram id="UFVRu7W0GHXEtEQYxteE" name="System">
+        <mxGraphModel dx="1011" dy="737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-0"/>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-1" parent="98wmgcszsLLJWeNlt4h4-0"/>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-2" value="HAPI FHIR (https://fhir.med-united.health)" style="shape=agent;offsetSize=8;strokeWidth=2;verticalAlign=top;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="310" y="230" width="480" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-3" value="MedUnitedMultiTenancyServer" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="540" y="268" width="240" height="52" as="geometry"/>
+                </mxCell>
+                <UserObject label="https://hapifhir.io/hapi-fhir/docs/server_plain/multitenancy.html" link="https://hapifhir.io/hapi-fhir/docs/server_plain/multitenancy.html" id="98wmgcszsLLJWeNlt4h4-4">
+                    <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                        <mxGeometry x="560" y="200" width="350" height="30" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-5" value="JWTTenantExtractorStrategy" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="320" y="268" width="180" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-6" value="PostgreSQL Database" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="310" y="470" width="480" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-7" value="" style="shape=useedge;vertical=true;edgeStyle=none;endArrow=none;useSignPosition=left;useSignDirection=none;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-6" target="98wmgcszsLLJWeNlt4h4-2">
+                    <mxGeometry height="160" relative="1" as="geometry">
+                        <mxPoint x="520" y="630" as="sourcePoint"/>
+                        <mxPoint x="520" y="470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-11" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-8" target="98wmgcszsLLJWeNlt4h4-10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-8" value="id.med-united.health" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="70" y="90" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-0" value="Best viewed with the &lt;a href=&quot;https://github.com/ariel-bentu/tam-drawio&quot;&gt;TAM plugin&lt;/a&gt;" style="text;html=1;shape=tamPluginMissing;" vertex="1" connectable="0" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="700" y="580" width="200" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-9" value="KeyCloak" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="110" y="50" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-13" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-10" target="98wmgcszsLLJWeNlt4h4-12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-10" value="JWT" style="rounded=1;whiteSpace=wrap;html=1;arcSize=60;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="260" y="110" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-20" style="edgeStyle=none;html=1;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-12" target="98wmgcszsLLJWeNlt4h4-19">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-12" value="medication-ordering-frontend" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="400" y="90" width="190" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-14" value="" style="shape=useedge;vertical=true;edgeStyle=none;endArrow=none;useSignPosition=left;useSignDirection=none;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-2" target="98wmgcszsLLJWeNlt4h4-12">
+                    <mxGeometry height="160" relative="1" as="geometry">
+                        <mxPoint x="450" y="340" as="sourcePoint"/>
+                        <mxPoint x="450" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-15" value="" style="shape=useedge;endArrow=none;edgeStyle=none;useSignPosition=up;useSignDirection=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-5" target="98wmgcszsLLJWeNlt4h4-3">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="500" y="294" as="sourcePoint"/>
+                        <mxPoint x="660" y="294" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-16" value="Extracts the domain of the e-mail address as the tenant ID" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="325" y="320" width="170" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-5" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-17" target="YlqC5ofd0TMgPBQfjxen-4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-17" value="earztbrief.med-united.health" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="890" y="250" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-1" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-19" target="98wmgcszsLLJWeNlt4h4-17">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="975" y="130"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="98wmgcszsLLJWeNlt4h4-19" value="XML&lt;br&gt;eArztbrief" style="rounded=1;whiteSpace=wrap;html=1;arcSize=60;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="730" y="110" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-2" value="earztbrief-frontend" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="940" y="35" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-3" value="" style="shape=useedge;vertical=true;edgeStyle=none;endArrow=none;useSignPosition=left;useSignDirection=none;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-17" target="YlqC5ofd0TMgPBQfjxen-2">
+                    <mxGeometry height="160" relative="1" as="geometry">
+                        <mxPoint x="1030" y="350" as="sourcePoint"/>
+                        <mxPoint x="1030" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-8" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="YlqC5ofd0TMgPBQfjxen-4" target="YlqC5ofd0TMgPBQfjxen-6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-4" value="E-Mail or KIM&lt;br&gt;Message" style="rounded=1;whiteSpace=wrap;html=1;arcSize=60;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="1100" y="260" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-11" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="YlqC5ofd0TMgPBQfjxen-6" target="YlqC5ofd0TMgPBQfjxen-10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-13" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="YlqC5ofd0TMgPBQfjxen-6" target="YlqC5ofd0TMgPBQfjxen-12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-6" value="PVS" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="1220" y="250" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-7" value="Phisician" style="shape=actor;horizontalLabelPosition=right;align=left;labelPosition=right;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="1250" y="170" width="35" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-9" value="" style="shape=useedge;vertical=true;edgeStyle=none;endArrow=none;useSignPosition=left;useSignDirection=none;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="YlqC5ofd0TMgPBQfjxen-6" target="YlqC5ofd0TMgPBQfjxen-7">
+                    <mxGeometry height="160" relative="1" as="geometry">
+                        <mxPoint x="1270" y="400" as="sourcePoint"/>
+                        <mxPoint x="1270" y="240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-10" value="E-Prescription" style="rounded=1;whiteSpace=wrap;html=1;arcSize=60;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="1225" y="400" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-17" style="edgeStyle=none;html=1;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="YlqC5ofd0TMgPBQfjxen-12" target="YlqC5ofd0TMgPBQfjxen-15">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-12" value="KIM Message&lt;br&gt;&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=60;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="1350" y="245" width="120" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-14" value="e-Prescription&lt;br&gt;Token" style="rounded=1;whiteSpace=wrap;html=1;arcSize=60;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="1365" y="268" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-15" value="AVS&#10;(Pharmacy)" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="1500" y="250" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-16" value="Pharmacust" style="shape=actor;horizontalLabelPosition=right;align=left;labelPosition=right;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
+                    <mxGeometry x="1532.5" y="170" width="35" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="YlqC5ofd0TMgPBQfjxen-18" value="" style="shape=useedge;vertical=true;edgeStyle=none;endArrow=none;useSignPosition=left;useSignDirection=south;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="YlqC5ofd0TMgPBQfjxen-15" target="YlqC5ofd0TMgPBQfjxen-16">
+                    <mxGeometry height="160" relative="1" as="geometry">
+                        <mxPoint x="1540" y="400" as="sourcePoint"/>
+                        <mxPoint x="1540" y="240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
     <diagram id="TTC9ItkF9DFmu4hpynOX" name="eArztbrief">
         <mxGraphModel dx="1011" dy="737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
@@ -555,101 +698,6 @@
                     <mxGeometry height="160" relative="1" as="geometry">
                         <mxPoint x="440" y="550" as="sourcePoint"/>
                         <mxPoint x="440" y="390" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-            </root>
-        </mxGraphModel>
-    </diagram>
-    <diagram id="UFVRu7W0GHXEtEQYxteE" name="System">
-        <mxGraphModel dx="1011" dy="737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-            <root>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-0"/>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-1" parent="98wmgcszsLLJWeNlt4h4-0"/>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-2" value="HAPI FHIR (https://fhir.med-united.health)" style="shape=agent;offsetSize=8;strokeWidth=2;verticalAlign=top;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
-                    <mxGeometry x="310" y="230" width="480" height="190" as="geometry"/>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-3" value="MedUnitedMultiTenancyServer" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
-                    <mxGeometry x="540" y="268" width="240" height="52" as="geometry"/>
-                </mxCell>
-                <UserObject label="https://hapifhir.io/hapi-fhir/docs/server_plain/multitenancy.html" link="https://hapifhir.io/hapi-fhir/docs/server_plain/multitenancy.html" id="98wmgcszsLLJWeNlt4h4-4">
-                    <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
-                        <mxGeometry x="560" y="200" width="350" height="30" as="geometry"/>
-                    </mxCell>
-                </UserObject>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-5" value="JWTTenantExtractorStrategy" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
-                    <mxGeometry x="320" y="268" width="180" height="52" as="geometry"/>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-6" value="PostgreSQL Database" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
-                    <mxGeometry x="310" y="470" width="480" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-7" value="" style="shape=useedge;vertical=true;edgeStyle=none;endArrow=none;useSignPosition=left;useSignDirection=none;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-6" target="98wmgcszsLLJWeNlt4h4-2">
-                    <mxGeometry height="160" relative="1" as="geometry">
-                        <mxPoint x="520" y="630" as="sourcePoint"/>
-                        <mxPoint x="520" y="470" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-11" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-8" target="98wmgcszsLLJWeNlt4h4-10">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-8" value="id.med-united.health" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
-                    <mxGeometry x="70" y="90" width="140" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="YlqC5ofd0TMgPBQfjxen-0" value="Best viewed with the &lt;a href=&quot;https://github.com/ariel-bentu/tam-drawio&quot;&gt;TAM plugin&lt;/a&gt;" style="text;html=1;shape=tamPluginMissing;" vertex="1" connectable="0" parent="98wmgcszsLLJWeNlt4h4-1">
-                    <mxGeometry x="435" y="580" width="200" height="25" as="geometry"/>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-9" value="KeyCloak" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
-                    <mxGeometry x="110" y="50" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-13" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-10" target="98wmgcszsLLJWeNlt4h4-12">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-10" value="JWT" style="rounded=1;whiteSpace=wrap;html=1;arcSize=60;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
-                    <mxGeometry x="260" y="110" width="90" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-20" style="edgeStyle=none;html=1;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-12" target="98wmgcszsLLJWeNlt4h4-19">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-12" value="medication-ordering-frontend" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
-                    <mxGeometry x="400" y="90" width="190" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-14" value="" style="shape=useedge;vertical=true;edgeStyle=none;endArrow=none;useSignPosition=left;useSignDirection=none;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-2" target="98wmgcszsLLJWeNlt4h4-12">
-                    <mxGeometry height="160" relative="1" as="geometry">
-                        <mxPoint x="450" y="340" as="sourcePoint"/>
-                        <mxPoint x="450" y="180" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-15" value="" style="shape=useedge;endArrow=none;edgeStyle=none;useSignPosition=up;useSignDirection=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-5" target="98wmgcszsLLJWeNlt4h4-3">
-                    <mxGeometry width="160" relative="1" as="geometry">
-                        <mxPoint x="500" y="294" as="sourcePoint"/>
-                        <mxPoint x="660" y="294" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-16" value="Extracts the domain of the e-mail address as the tenant ID" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
-                    <mxGeometry x="325" y="320" width="170" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-17" value="earztbrief.med-united.health" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
-                    <mxGeometry x="890" y="250" width="170" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-18" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=60;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
-                    <mxGeometry x="660" y="310" width="90" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="YlqC5ofd0TMgPBQfjxen-1" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-19" target="98wmgcszsLLJWeNlt4h4-17">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="975" y="130"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="98wmgcszsLLJWeNlt4h4-19" value="XML&lt;br&gt;eArztbrief" style="rounded=1;whiteSpace=wrap;html=1;arcSize=60;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
-                    <mxGeometry x="730" y="110" width="90" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="YlqC5ofd0TMgPBQfjxen-2" value="earztbrief-frontend" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="98wmgcszsLLJWeNlt4h4-1">
-                    <mxGeometry x="940" y="35" width="130" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="YlqC5ofd0TMgPBQfjxen-3" value="" style="shape=useedge;vertical=true;edgeStyle=none;endArrow=none;useSignPosition=left;useSignDirection=south;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="98wmgcszsLLJWeNlt4h4-1" source="98wmgcszsLLJWeNlt4h4-17" target="YlqC5ofd0TMgPBQfjxen-2">
-                    <mxGeometry height="160" relative="1" as="geometry">
-                        <mxPoint x="1030" y="350" as="sourcePoint"/>
-                        <mxPoint x="1030" y="190" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
             </root>
