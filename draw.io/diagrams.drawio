@@ -1,6 +1,59 @@
 <mxfile host="65bd71144e">
+    <diagram id="MY4w7Cn-UuEvM6XS3-Vx" name="Seite-16">
+        <mxGraphModel dx="934" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="rOzb5RrUKIBxZYnn55No-0"/>
+                <mxCell id="rOzb5RrUKIBxZYnn55No-1" parent="rOzb5RrUKIBxZYnn55No-0"/>
+                <mxCell id="rOzb5RrUKIBxZYnn55No-2" value="www.apotheken-umschau.de" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="rOzb5RrUKIBxZYnn55No-1">
+                    <mxGeometry x="655" y="390" width="165" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="0.1" value="Best viewed with the &lt;a href=&quot;https://github.com/ariel-bentu/tam-drawio&quot;&gt;TAM plugin&lt;/a&gt;" style="text;html=1;shape=tamPluginMissing;" vertex="1" connectable="0" parent="rOzb5RrUKIBxZYnn55No-1">
+                    <mxGeometry x="310" y="530" width="200" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOzb5RrUKIBxZYnn55No-3" value="medication.med-united.health" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="rOzb5RrUKIBxZYnn55No-1">
+                    <mxGeometry x="415" y="390" width="170" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOzb5RrUKIBxZYnn55No-5" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="rOzb5RrUKIBxZYnn55No-1" source="rOzb5RrUKIBxZYnn55No-4" target="rOzb5RrUKIBxZYnn55No-3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOzb5RrUKIBxZYnn55No-4" value="nginx-ingress-with-cors" style="rounded=1;whiteSpace=wrap;html=1;arcSize=60;strokeWidth=2;" vertex="1" parent="rOzb5RrUKIBxZYnn55No-1">
+                    <mxGeometry x="410" y="280" width="180" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOzb5RrUKIBxZYnn55No-6" value="" style="shape=useedge;endArrow=none;edgeStyle=none;useSignPosition=up;useSignDirection=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="rOzb5RrUKIBxZYnn55No-1" source="rOzb5RrUKIBxZYnn55No-3" target="rOzb5RrUKIBxZYnn55No-2">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="625" y="420" as="sourcePoint"/>
+                        <mxPoint x="785" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rOzb5RrUKIBxZYnn55No-7" value="Details&#10;Controller" style="shape=agent;offsetSize=8;strokeWidth=2;verticalAlign=top;" vertex="1" parent="rOzb5RrUKIBxZYnn55No-1">
+                    <mxGeometry x="20" y="320" width="180" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOzb5RrUKIBxZYnn55No-8" value="MedicationSearchProvider" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="rOzb5RrUKIBxZYnn55No-1">
+                    <mxGeometry x="230" y="385" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOzb5RrUKIBxZYnn55No-9" value="PZN Field" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="rOzb5RrUKIBxZYnn55No-1">
+                    <mxGeometry x="30" y="420" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOzb5RrUKIBxZYnn55No-10" value="Name Field" style="shape=agent;offsetSize=8;strokeWidth=2;" vertex="1" parent="rOzb5RrUKIBxZYnn55No-1">
+                    <mxGeometry x="30" y="370" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOzb5RrUKIBxZYnn55No-11" value="" style="shape=useedge;endArrow=none;edgeStyle=none;useSignPosition=up;useSignDirection=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="rOzb5RrUKIBxZYnn55No-1" source="rOzb5RrUKIBxZYnn55No-8" target="rOzb5RrUKIBxZYnn55No-3">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="390" y="490" as="sourcePoint"/>
+                        <mxPoint x="550" y="490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rOzb5RrUKIBxZYnn55No-12" value="" style="shape=useedge;endArrow=none;edgeStyle=none;useSignPosition=up;useSignDirection=east;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="rOzb5RrUKIBxZYnn55No-1" source="rOzb5RrUKIBxZYnn55No-7" target="rOzb5RrUKIBxZYnn55No-8">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="230" y="470" as="sourcePoint"/>
+                        <mxPoint x="390" y="470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
     <diagram id="gJegorQsxC9i4Mn4YBnK" name="CreateDialog">
-        <mxGraphModel dx="894" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="654" dy="444" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="OAlmE4Z1qT-rYMr_kx4i-0"/>
                 <mxCell id="OAlmE4Z1qT-rYMr_kx4i-1" parent="OAlmE4Z1qT-rYMr_kx4i-0"/>
